@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "leaderboard",
   "scripts": {
-    "start": "webpack",
+    "start": "webpack serve --open",
+    "build": "webpack",
     "test": "jest --coverage"
   },
   "repository": {
