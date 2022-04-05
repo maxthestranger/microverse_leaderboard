@@ -2,9 +2,9 @@
   "name": "microverse_leaderboard",
   "version": "1.0.0",
   "description": "leaderboard",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "start": "webpack",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
