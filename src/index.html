@@ -14,28 +14,19 @@
         <div class="col">
           <div class="col_header">
             <h2>Recent Scores</h2>
-            <button type="button">Refresh</button>
+            <button type="button" class="refresh">Refresh</button>
           </div>
 
           <table>
-            <tbody>
-              <tr>
-                <td>Name: 100</td>
-              </tr>
-              <tr>
-                <td>Name: 20</td>
-              </tr>
-              <tr>
-                <td>Name: 50</td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
         <div class="col">
           <h2>Add your Score</h2>
+          <p class="results"></p>
           <form>
             <div class="form_group">
-              <input type="text" name="name" placeholder="Your name" />
+              <input type="text" name="user" placeholder="Your name" />
             </div>
 
             <div class="form_group">
@@ -43,7 +34,7 @@
             </div>
 
             <div class="form_group">
-              <button type="submit">Submit</button>
+              <button type="submit" class="submit">Submit</button>
             </div>
           </form>
         </div>
