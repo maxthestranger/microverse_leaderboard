@@ -7,36 +7,37 @@
     <title>Leaderboard</title>
   </head>
   <body>
-    <main>
-      <h1>Leaderboard</h1>
-
+    <main class="display_sec">
+      <h1 class="title">Leaderboard</h1>
       <div class="container">
-        <div class="col">
-          <div class="col_header">
-            <h2>Recent Scores</h2>
-            <button type="button" class="refresh">Refresh</button>
+        <div class="flex">
+          <div class="col">
+            <div class="col_header">
+              <h2>Recent Scores</h2>
+              <button type="button" class="refresh btn">Refresh</button>
+            </div>
+
+            <ul class="books_display"></ul>
           </div>
-
-          <table>
-            <tbody></tbody>
-          </table>
-        </div>
-        <div class="col">
-          <h2>Add your Score</h2>
-          <p class="results"></p>
-          <form>
-            <div class="form_group">
-              <input type="text" name="user" placeholder="Your name" />
+          <div class="col">
+            <div class="col_header">
+              <h2>Add your Score</h2>
+              <p class="results"></p>
             </div>
+            <form>
+              <div class="form_group">
+                <input type="text" name="user" placeholder="Your name" />
+              </div>
 
-            <div class="form_group">
-              <input type="number" name="score" placeholder="Your score" />
-            </div>
+              <div class="form_group">
+                <input type="number" name="score" placeholder="Your score" />
+              </div>
 
-            <div class="form_group">
-              <button type="submit" class="submit">Submit</button>
-            </div>
-          </form>
+              <div class="form_group">
+                <button type="submit" class="submit btn">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>

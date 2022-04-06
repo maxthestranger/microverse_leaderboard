@@ -8,8 +8,7 @@ export const handleCreateScore = (e) => {
   e.preventDefault();
   const form = document.querySelector('form');
   const message = document.querySelector('.results');
-  const btn = document.querySelector('.submit');
-  btn.innerHTML = "<i class='bx bx-loader-circle spin'></i>";
+  message.innerHTML = "<i class='bx bx-loader-circle spin'></i>";
 
   //   fetch user inputs
   const scoreData = {
@@ -24,25 +23,22 @@ export const handleCreateScore = (e) => {
   });
 
   // clear input
-  btn.innerHTML = 'Submit';
   form.elements.user.value = '';
   form.elements.score.value = '';
 };
 
 const createTable = ({ user, score }) => {
-  const tr = document.createElement('tr');
-  tr.innerHTML = `
-    <td>
-        <span>${user}</span>
-        <span>${score}</span>
-    </td>
+  const li = document.createElement('li');
+  li.innerHTML = `
+      <span>${user}</span>
+      <span>${score}</span>
     `;
 
-  return tr;
+  return li;
 };
 
 export const handleGetScore = () => {
-  const table = document.querySelector('table tbody');
+  const table = document.querySelector('.books_display');
   table.innerHTML = "<i class='bx bx-loader-circle spin'></i>";
   getScores(GAME_ID).then((data) => {
     const scores = data.result;
