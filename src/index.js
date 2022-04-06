@@ -1,4 +1,5 @@
 import './style.css';
+import '../node_modules/boxicons/css/boxicons.min.css';
 import { handleCreateScore, handleGetScore } from './renderGames.js';
 
 const form = document.querySelector('form');
