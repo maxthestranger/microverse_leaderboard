@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com) _available when merged_
+[Live Demo Link](https://maxthestranger.github.io/microverse_leaderboard/)
 
 ## Getting Started
 
